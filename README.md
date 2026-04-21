@@ -1,17 +1,28 @@
-# React + Vite
+# My Travel Journal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small data-driven React app that displays a personal travel journal. Each entry shows a destination photo, country name, visit dates, a short description, and a link to the location on Google Maps.
 
-Currently, two official plugins are available:
+## What it does
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Reads travel entries from a central `data.js` array
+- Maps over the data to render an `<Entry>` card for each destination
+- Currently includes three sample entries: Mount Fuji (Japan), Sydney Opera House (Australia), and Geirangerfjord (Norway)
 
-## React Compiler
+## Project structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```
+src/
+  data.js       # Array of travel entry objects (image, title, country, dates, description, map link)
+  App.jsx       # Maps over data and renders Entry components
+  Entry.jsx     # Card component for a single journal entry
+  Header.jsx    # Page header with globe icon and "my travel journal" title
+```
 
-## Expanding the ESLint configuration
+## Getting started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# travel-journal
+```bash
+npm install
+npm run dev
+```
+
+Built with React 19 and Vite. Part of the Scrimba data-driven components module.
