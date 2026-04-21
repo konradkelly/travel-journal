@@ -1,0 +1,23 @@
+header {
+    background: var(--header-bg);
+    display: flex;
+    justify-content: center;
+    color: var(--header-text);
+    height: 72px;
+    align-items: center;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
+header > img {
+    height: 28px;
+    width: 28px;
+    margin-right: 7px;
+}
+
+header > h1 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: var(--header-text);
+}

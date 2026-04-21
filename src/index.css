@@ -1,0 +1,18 @@
+:root {
+  --header-bg: #f55a5a;
+  --header-text: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+#root {
+  margin: 0 auto;
+  width: min(94vw, 920px);
+}
