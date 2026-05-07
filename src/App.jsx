@@ -12,8 +12,8 @@ function App() {
           key={entry.id}
           img={entry.img}
           title={entry.title}
-          country={entry.country}
-          googleMapsLink={entry.googleMapsLink}
+          country={entry.count}
+          googleMapsLink={entry.yahooMaps}
           dates={entry.dates}
           text={entry.text}
         />
